@@ -78,7 +78,6 @@ namespace AzureRegistration
         /// <returns></returns>
         public static string GetEnvironmentVariable(string name)
         {
-            //return "DefaultEndpointsProtocol=https;AccountName=azureregistration;AccountKey=+3hUP0uDA/+1OOZjx3eVLx4mjRGxdmQArPuI40yn2JGWnu/enEREUf3vFr0VLoCg8rugL4xjeuCVoir54tajug==;BlobEndpoint=https://azureregistration.blob.core.windows.net/;TableEndpoint=https://azureregistration.table.core.windows.net/;QueueEndpoint=https://azureregistration.queue.core.windows.net/;FileEndpoint=https://azureregistration.file.core.windows.net/";
             return System.Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
         }
 
